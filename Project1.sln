@@ -15,33 +15,33 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{C21621EF-B
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GetAllIps", "GetAllIps\GetAllIps.vcxproj", "{2F676467-4F85-4D88-8854-94A4952E5DD7}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LocalHostInfo", "..\chapter2\LocalHostInfo\LocalHostInfo.vcxproj", "{45CF7C21-AF83-4779-9289-5C3D7AC89488}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LocalHostInfo", "chapter2\LocalHostInfo\LocalHostInfo.vcxproj", "{45CF7C21-AF83-4779-9289-5C3D7AC89488}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NetTime", "..\chapter2\NetTime\NetTime.vcxproj", "{178E97F7-2E1D-4D8B-9C44-E958FCCF6E01}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NetTime", "chapter2\NetTime\NetTime.vcxproj", "{178E97F7-2E1D-4D8B-9C44-E958FCCF6E01}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TcpClient", "..\chapter2\TcpClient\TcpClient.vcxproj", "{129F7855-7368-4CB8-9E9A-F4ED0CC41322}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TcpClient", "chapter2\TcpClient\TcpClient.vcxproj", "{129F7855-7368-4CB8-9E9A-F4ED0CC41322}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TCPServer", "..\chapter2\TCPServer\TCPServer.vcxproj", "{71ABA061-E32A-4DDE-8FDF-D617119B0C6B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TCPServer", "chapter2\TCPServer\TCPServer.vcxproj", "{71ABA061-E32A-4DDE-8FDF-D617119B0C6B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UDPClient", "..\chapter2\UDPClient\UDPClient.vcxproj", "{FCD9A916-B5F7-4965-8A56-91C4F893699A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UDPClient", "chapter2\UDPClient\UDPClient.vcxproj", "{FCD9A916-B5F7-4965-8A56-91C4F893699A}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UDPServer", "..\chapter2\UDPServer\UDPServer.vcxproj", "{6DD87CDC-889C-4312-9EE2-185159B322B7}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UDPServer", "chapter2\UDPServer\UDPServer.vcxproj", "{6DD87CDC-889C-4312-9EE2-185159B322B7}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EventServerSelect", "..\chapter3\EventServerSelect\EventServerSelect.vcxproj", "{CFBBB9A2-AB9C-478B-ABF6-930A4FEBAB1C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EventServerSelect", "chapter3\EventServerSelect\EventServerSelect.vcxproj", "{CFBBB9A2-AB9C-478B-ABF6-930A4FEBAB1C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OverlappedServer", "..\chapter3\OverlappedServer\OverlappedServer.vcxproj", "{095E5A79-6EA8-4A02-87E2-303130B8D541}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OverlappedServer", "chapter3\OverlappedServer\OverlappedServer.vcxproj", "{095E5A79-6EA8-4A02-87E2-303130B8D541}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "select", "..\chapter3\select\select.vcxproj", "{468DCAEC-7032-4144-8611-D14879C11D06}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "select", "chapter3\select\select.vcxproj", "{468DCAEC-7032-4144-8611-D14879C11D06}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WSAAsyncSelect", "..\chapter3\WSAAsyncSelect\WSAAsyncSelect.vcxproj", "{2A2DD474-A570-4E14-AA23-12C170B73013}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WSAAsyncSelect", "chapter3\WSAAsyncSelect\WSAAsyncSelect.vcxproj", "{2A2DD474-A570-4E14-AA23-12C170B73013}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WSAEventSelect", "..\chapter3\WSAEventSelect\WSAEventSelect.vcxproj", "{B4CC5F62-AC7B-40C1-B923-AE9EDE3B5787}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WSAEventSelect", "chapter3\WSAEventSelect\WSAEventSelect.vcxproj", "{B4CC5F62-AC7B-40C1-B923-AE9EDE3B5787}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IOCPDemo", "..\chapter4\IOCPDemo\IOCPDemo.vcxproj", "{C1DCE9BB-8C3A-43A6-91BC-7B311D7265BE}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IOCPDemo", "chapter4\IOCPDemo\IOCPDemo.vcxproj", "{C1DCE9BB-8C3A-43A6-91BC-7B311D7265BE}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "iocpsys", "..\chapter4\iocpsys\iocpsys.vcxproj", "{A8630347-3AAE-4378-9E61-5A03F56D56DD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "iocpsys", "chapter4\iocpsys\iocpsys.vcxproj", "{A8630347-3AAE-4378-9E61-5A03F56D56DD}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ServerShutdown", "..\chapter4\ServerShutdown\ServerShutdown\ServerShutdown.vcxproj", "{8A385533-317B-41F1-B5B0-34523C89CE0F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ServerShutdown", "chapter4\ServerShutdown\ServerShutdown\ServerShutdown.vcxproj", "{8A385533-317B-41F1-B5B0-34523C89CE0F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -190,7 +190,6 @@ Global
 		{129F7855-7368-4CB8-9E9A-F4ED0CC41322} = {66EB6396-BF7F-4AF5-9870-B953C7D9BD67}
 		{71ABA061-E32A-4DDE-8FDF-D617119B0C6B} = {66EB6396-BF7F-4AF5-9870-B953C7D9BD67}
 		{FCD9A916-B5F7-4965-8A56-91C4F893699A} = {66EB6396-BF7F-4AF5-9870-B953C7D9BD67}
-		{6DD87CDC-889C-4312-9EE2-185159B322B7} = {66EB6396-BF7F-4AF5-9870-B953C7D9BD67}
 		{CFBBB9A2-AB9C-478B-ABF6-930A4FEBAB1C} = {D730E8E7-2A75-4F45-A586-122B9DBA00AB}
 		{095E5A79-6EA8-4A02-87E2-303130B8D541} = {D730E8E7-2A75-4F45-A586-122B9DBA00AB}
 		{468DCAEC-7032-4144-8611-D14879C11D06} = {D730E8E7-2A75-4F45-A586-122B9DBA00AB}

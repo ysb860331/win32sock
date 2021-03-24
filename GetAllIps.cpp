@@ -2,7 +2,7 @@
 // GetAllIps.cpp文件
 #define _WINSOCK_DEPRECATED_NO_WARNINGS
 
-#include "../CommLib/common/initsock.h"
+#include "CommLib/common/initsock.h"
 #include <windows.h>
 
 #include <stdio.h>
