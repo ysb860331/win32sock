@@ -765,7 +765,7 @@ DWORD WINAPI CIOCPServer::_WorkerThreadProc(LPVOID lpParam)
 	{
 		// 在关联到此完成端口的所有套节字上等待I/O完成
 		BOOL bOK = ::GetQueuedCompletionStatus(pThis->m_hCompletion,
-			&dwTrans, (LPDWORD)&dwKey, (LPOVERLAPPED*)&lpol, WSA_INFINITE);
+			&dwTrans, (PULONG_PTR)&dwKey, (LPOVERLAPPED*)&lpol, WSA_INFINITE);
 
 		if (dwTrans == -1) // 用户通知退出
 		{

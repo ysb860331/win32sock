@@ -40,7 +40,7 @@ DWORD WINAPI ServerThread(LPVOID lpParam)
 	{
 		// 在关联到此完成端口的所有套节字上等待I/O完成
 		BOOL bOK = ::GetQueuedCompletionStatus(hCompletion,
-			&dwTrans, (LPDWORD)&pPerHandle, (LPOVERLAPPED*)&pPerIO, WSA_INFINITE);
+			&dwTrans, (PULONG_PTR)&pPerHandle, (LPOVERLAPPED*)&pPerIO, WSA_INFINITE);
 		if (!bOK)                        // 在此套节字上有错误发生
 		{
 			::closesocket(pPerHandle->s);
