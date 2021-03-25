@@ -41,6 +41,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "iocpsys", "chapter4\iocpsys
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ServerShutdown", "chapter4\ServerShutdown\ServerShutdown\ServerShutdown.vcxproj", "{8A385533-317B-41F1-B5B0-34523C89CE0F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyIocp", "Test\MyIocp\MyIocp.vcxproj", "{FC067EAF-C5AC-44E5-9719-487824F3D54E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -169,6 +171,14 @@ Global
 		{8A385533-317B-41F1-B5B0-34523C89CE0F}.Release|x64.Build.0 = Release|x64
 		{8A385533-317B-41F1-B5B0-34523C89CE0F}.Release|x86.ActiveCfg = Release|Win32
 		{8A385533-317B-41F1-B5B0-34523C89CE0F}.Release|x86.Build.0 = Release|Win32
+		{FC067EAF-C5AC-44E5-9719-487824F3D54E}.Debug|x64.ActiveCfg = Debug|x64
+		{FC067EAF-C5AC-44E5-9719-487824F3D54E}.Debug|x64.Build.0 = Debug|x64
+		{FC067EAF-C5AC-44E5-9719-487824F3D54E}.Debug|x86.ActiveCfg = Debug|Win32
+		{FC067EAF-C5AC-44E5-9719-487824F3D54E}.Debug|x86.Build.0 = Debug|Win32
+		{FC067EAF-C5AC-44E5-9719-487824F3D54E}.Release|x64.ActiveCfg = Release|x64
+		{FC067EAF-C5AC-44E5-9719-487824F3D54E}.Release|x64.Build.0 = Release|x64
+		{FC067EAF-C5AC-44E5-9719-487824F3D54E}.Release|x86.ActiveCfg = Release|Win32
+		{FC067EAF-C5AC-44E5-9719-487824F3D54E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -189,6 +199,7 @@ Global
 		{C1DCE9BB-8C3A-43A6-91BC-7B311D7265BE} = {2B18EA51-6A9D-4A65-A328-59A2AB32F3D5}
 		{A8630347-3AAE-4378-9E61-5A03F56D56DD} = {2B18EA51-6A9D-4A65-A328-59A2AB32F3D5}
 		{8A385533-317B-41F1-B5B0-34523C89CE0F} = {2B18EA51-6A9D-4A65-A328-59A2AB32F3D5}
+		{FC067EAF-C5AC-44E5-9719-487824F3D54E} = {C21621EF-B682-4810-BCEC-D39965744914}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EFC3C863-4E16-4850-94F2-3A95B2D17144}
