@@ -14,6 +14,7 @@ void SendString(SOCKET s, int nIndex)
 {
 	char szTextSend[100] = { 0 };
 	sprintf_s(szTextSend, "other string %d\n", nIndex);
+	printf(szTextSend);
 	::send(s, szTextSend, strlen(szTextSend), 0);
 }
 
@@ -21,13 +22,17 @@ static char operMode = 'n';
 
 DWORD WINAPI ClientThread(LPVOID lpParam)
 {
-	printf("请输入操作方式：\n");
+	printf("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+	printf("\n");
 	printf("【r】 表示接收数据 \n");
 	printf("【s】 表示发送数据 \n");
 	printf("【c】 表示关闭套接字 \n");
+	printf("【n】 表示套接字空闲 \n");
 
-	printf("\n\n默认操作方式：r \n");
-	operMode = 'r';
+	printf("\n\n默认操作方式：n \n");
+	printf("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+	printf("\n");
+	operMode = 'n';
 
 	while (true)
 	{
@@ -83,9 +88,9 @@ int main()
 	::getsockname(s, (struct sockaddr *)&guest, &guest_len);
 	printf("getsockname 本地 (%s)  port:(%d)\n", ::inet_ntoa(guest.sin_addr), guest.sin_port);
 
-	char szTextSend[100] = { 0 };
-	sprintf_s(szTextSend, "ip: (%s)  port:(%d)\n", ::inet_ntoa(guest.sin_addr), guest.sin_port);
-	::send(s, szTextSend, strlen(szTextSend), 0);
+// 	char szTextSend[100] = { 0 };
+// 	sprintf_s(szTextSend, "ip: (%s)  port:(%d)\n", ::inet_ntoa(guest.sin_addr), guest.sin_port);
+// 	::send(s, szTextSend, strlen(szTextSend), 0);
 
 	//sockaddr_in guest;
 	guest_len = sizeof(guest);
@@ -100,12 +105,12 @@ int main()
 // 		::Sleep(1000);
 // 	}
 
+	int nSendIndex = 0;
 	while (true)
 	{
 		if (operMode == 'c')
 		{
 			::closesocket(s);
-			operMode = 'n';
 		}
 		else if (operMode == 'r')
 		{
@@ -118,8 +123,16 @@ int main()
 				if (nRecv >= 256)
 					nRecv = 255;
 				buff[nRecv] = '\0';
-				printf(" 接收到数据：%s\n", buff);
+				printf("接收到数据：%s\n", buff);
 			}	
+		}
+		else if (operMode == 's')
+		{
+			SendString(s, nSendIndex);
+			nSendIndex++;
+		}
+		if (operMode != 'n')
+		{
 			operMode = 'n';
 		}
 	}
